@@ -7,8 +7,14 @@
 //
 
 #import "ViewController.h"
+#import "CustomUITextView.h"
+#import "CustomUIWebView.h"
+#import "UrlParser.h"
 
 @interface ViewController ()
+
+@property (weak, nonatomic) IBOutlet CustomUITextView *textView;
+@property (weak, nonatomic) IBOutlet CustomUIWebView *webView;
 
 @end
 
@@ -16,7 +22,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    self.webView.parser = (id)[[UrlParser alloc] init];
+    
+    [self.textView setDelegate:self.webView];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  CustomUITextView.h
 //  MarkdownConverter
 //
 //  Created by Julian Alonso on 9/2/15.
@@ -8,9 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface CustomUITextView : UITextView
 
-@property (strong, nonatomic) UIWindow *window;
+@property (nonatomic, weak) id<UITextViewDelegate> delegate;
 
 @end
-

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01D63EB21A8954ED00229D05 /* UrlParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D63EB11A8954ED00229D05 /* UrlParser.m */; };
 		01F9B0D81A8935C800369AD5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F9B0D71A8935C800369AD5 /* main.m */; };
 		01F9B0DB1A8935C800369AD5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F9B0DA1A8935C800369AD5 /* AppDelegate.m */; };
 		01F9B0DE1A8935C800369AD5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F9B0DD1A8935C800369AD5 /* ViewController.m */; };
@@ -14,6 +15,8 @@
 		01F9B0E31A8935C800369AD5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01F9B0E21A8935C800369AD5 /* Images.xcassets */; };
 		01F9B0E61A8935C800369AD5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01F9B0E41A8935C800369AD5 /* LaunchScreen.xib */; };
 		01F9B0F21A8935C800369AD5 /* MarkdownConverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F9B0F11A8935C800369AD5 /* MarkdownConverterTests.m */; };
+		01F9B0FD1A8935D800369AD5 /* CustomUITextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F9B0FC1A8935D800369AD5 /* CustomUITextView.m */; };
+		01F9B1001A8935FF00369AD5 /* CustomUIWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F9B0FF1A8935FF00369AD5 /* CustomUIWebView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01D63EB01A8954ED00229D05 /* UrlParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UrlParser.h; path = Parsers/UrlParser.h; sourceTree = "<group>"; };
+		01D63EB11A8954ED00229D05 /* UrlParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UrlParser.m; path = Parsers/UrlParser.m; sourceTree = "<group>"; };
 		01F9B0D21A8935C800369AD5 /* MarkdownConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarkdownConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01F9B0D61A8935C800369AD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01F9B0D71A8935C800369AD5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +45,10 @@
 		01F9B0EB1A8935C800369AD5 /* MarkdownConverterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarkdownConverterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01F9B0F01A8935C800369AD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01F9B0F11A8935C800369AD5 /* MarkdownConverterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarkdownConverterTests.m; sourceTree = "<group>"; };
+		01F9B0FB1A8935D800369AD5 /* CustomUITextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomUITextView.h; sourceTree = "<group>"; };
+		01F9B0FC1A8935D800369AD5 /* CustomUITextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomUITextView.m; sourceTree = "<group>"; };
+		01F9B0FE1A8935FF00369AD5 /* CustomUIWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomUIWebView.h; sourceTree = "<group>"; };
+		01F9B0FF1A8935FF00369AD5 /* CustomUIWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomUIWebView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +69,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01D63EAF1A8954C000229D05 /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				01D63EB01A8954ED00229D05 /* UrlParser.h */,
+				01D63EB11A8954ED00229D05 /* UrlParser.m */,
+			);
+			name = Parsers;
+			sourceTree = "<group>";
+		};
 		01F9B0C91A8935C800369AD5 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +99,7 @@
 		01F9B0D41A8935C800369AD5 /* MarkdownConverter */ = {
 			isa = PBXGroup;
 			children = (
+				01D63EAF1A8954C000229D05 /* Parsers */,
 				01F9B0D91A8935C800369AD5 /* AppDelegate.h */,
 				01F9B0DA1A8935C800369AD5 /* AppDelegate.m */,
 				01F9B0DC1A8935C800369AD5 /* ViewController.h */,
@@ -89,6 +108,10 @@
 				01F9B0E21A8935C800369AD5 /* Images.xcassets */,
 				01F9B0E41A8935C800369AD5 /* LaunchScreen.xib */,
 				01F9B0D51A8935C800369AD5 /* Supporting Files */,
+				01F9B0FB1A8935D800369AD5 /* CustomUITextView.h */,
+				01F9B0FC1A8935D800369AD5 /* CustomUITextView.m */,
+				01F9B0FE1A8935FF00369AD5 /* CustomUIWebView.h */,
+				01F9B0FF1A8935FF00369AD5 /* CustomUIWebView.m */,
 			);
 			path = MarkdownConverter;
 			sourceTree = "<group>";
@@ -168,6 +191,7 @@
 				TargetAttributes = {
 					01F9B0D11A8935C800369AD5 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = DKDFXAA6C4;
 					};
 					01F9B0EA1A8935C800369AD5 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -221,6 +245,9 @@
 			files = (
 				01F9B0DE1A8935C800369AD5 /* ViewController.m in Sources */,
 				01F9B0DB1A8935C800369AD5 /* AppDelegate.m in Sources */,
+				01D63EB21A8954ED00229D05 /* UrlParser.m in Sources */,
+				01F9B0FD1A8935D800369AD5 /* CustomUITextView.m in Sources */,
+				01F9B1001A8935FF00369AD5 /* CustomUIWebView.m in Sources */,
 				01F9B0D81A8935C800369AD5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,6 +328,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -335,6 +363,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -412,6 +441,7 @@
 				01F9B0F71A8935C800369AD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		01F9B0F81A8935C800369AD5 /* Build configuration list for PBXNativeTarget "MarkdownConverterTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +450,7 @@
 				01F9B0FA1A8935C800369AD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
